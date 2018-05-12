@@ -8,7 +8,12 @@ if (keyboard_check(ord("A")))
 	haxis = -1;
 if (keyboard_check(ord("D")))
 	haxis = 1;
-
+	
+if (haxis == -1)
+	image_index = 1
+if (haxis == 1)
+	image_index = 0
+	
 // find current speed
 hspeed = haxis*moveSpeed;
 
