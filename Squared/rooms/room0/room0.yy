@@ -7,7 +7,7 @@
     "inheritCreationOrder": false,
     "inheritLayers": false,
     "instanceCreationOrderIDs": [
-
+        "e8b895d1-487a-4f26-9c2d-510e996846dd"
     ],
     "IsDnD": false,
     "layers": [
@@ -25,7 +25,7 @@
             "inheritSubLayers": false,
             "inheritVisibility": false,
             "instances": [
-
+{"name": "inst_4215D3D4","id": "e8b895d1-487a-4f26-9c2d-510e996846dd","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_4215D3D4","objId": "e1cc3f26-5896-4df4-a8e0-508d87a13497","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 448,"y": 704}
             ],
             "layers": [
 
