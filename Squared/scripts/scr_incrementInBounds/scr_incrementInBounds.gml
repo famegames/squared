@@ -1,41 +1,38 @@
-///real = scr_incrementInBounds(variable, amount, lowerBound, upperBound, wrapAround)
-/* 
-* Description: increments a value within a certain bound
-* Arguments:   variable - variable to increment
-*              amount - amount to increment or decrement by
-*              lowerBound - lower bound limit
-*              upperBound - upper bound limit
-*              wrapAround - whether to wrap around
-* Returns:     real, the new value
-*/
+/// @function real = scr_incrementInBounds(value, amount, lowerBound, upperBound, wrapAround)
+/// @description Increments a value within a certain bound, returns real
+/// @argument value value to increment
+/// @argument amount amount to increment or decrement by
+/// @argument lowerBound lower bound limit
+/// @argument upperBound upper bound limit
+/// @argument wrapAround whether to wrap around
 
 // set input
-var variable = argument0;
+var value = argument0;
 var amount = argument1;
 var lowerBound = argument2;
 var upperBound = argument3;
 var wrapAround = argument4;
 
-// increment variable
-variable += amount;
+// increment value
+value += amount;
 
-// keep variable in bounds
-if (variable > upperBound) {
+// keep value in bounds
+if (value > upperBound) {
     if (wrapAround) {
-        var extra = variable - upperBound - 1;
-        variable = lowerBound + extra;
+        var extra = value - upperBound - 1;
+        value = lowerBound + extra;
         }
     else
-        variable = upperBound;
+        value = upperBound;
     }
-else if (variable < lowerBound) {
+else if (value < lowerBound) {
     if (wrapAround) {
-        var extra = variable - lowerBound + 1;
-        variable = upperBound + extra;
+        var extra = value - lowerBound + 1;
+        value = upperBound + extra;
         }
     else
-        variable = lowerBound;
+        value = lowerBound;
     }
 
 // return result
-return variable;
+return value;
