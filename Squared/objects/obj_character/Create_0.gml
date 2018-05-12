@@ -17,3 +17,6 @@ jumpSpeed = 6;
 
 // Player - instance id of the controlling player
 Player = noone;
+
+//Animation
+image_speed = 0
