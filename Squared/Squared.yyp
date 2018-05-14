@@ -55,6 +55,22 @@
             }
         },
         {
+            "Key": "0ec07c73-5b06-4874-8105-4410c6d5b69e",
+            "Value": {
+                "id": "96b6837c-272e-4d32-9398-7165e194f0ce",
+                "resourcePath": "sprites\\spr_inventory\\spr_inventory.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "11f5ab23-88b2-4008-a061-4bde26658fa2",
+            "Value": {
+                "id": "92503b72-7d0d-4e95-9c43-74499292bdb7",
+                "resourcePath": "sprites\\spr_equipped\\spr_equipped.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "23a337da-fe41-4ab7-b69a-164deed90ba6",
             "Value": {
                 "id": "9b2603ae-1761-4670-bea0-639cba466904",
