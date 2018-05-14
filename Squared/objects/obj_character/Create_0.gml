@@ -5,8 +5,9 @@ moveSpeed = 4;
 
 // Attack variables initialization
 dmg = 0
-fireRate = 0
+fireRate = 1
 range = 0
+canFire = true  //enable after fireRate delay has passed
 
 // gravityIncr - the amount to increment the vspeed by when falling
 gravityIncr = 0.4;

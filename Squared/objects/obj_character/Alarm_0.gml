@@ -1,0 +1,2 @@
+/// @description Reload
+canFire = true;
