@@ -11,7 +11,7 @@ if (instance_exists(inventory[1])) {
 	}
 
 //Draw inventory
-if (drawInventory) {
+if (inventoryOpen) {
 	//Draw spr_inventory
 	draw_sprite(spr_inventory,-1,(room_width/2)-(208/2),(room_height/2)-(208/2));
 	//Draw items in inventory
@@ -20,7 +20,7 @@ if (drawInventory) {
 	for (i = 0; i < rowSize; i += 1) {
 		for (j = 0; j < rowSize; j += 1) {
 			if (instance_exists(inventory[i*3+j+2])) {
-				draw_sprite(spr_itemDisplay,inventory[i].image_index,((room_width/2)-(208/2)+4*(j+1)+64*j),(room_height/2)-(208/2)+4*(i+1)+64*i);
+				draw_sprite(spr_itemDisplay,inventory[i*3+j+2].image_index,((room_width/2)-(208/2)+4*(j+1)+64*j),(room_height/2)-(208/2)+4*(i+1)+64*i);
 				}			
 			}
 		}
