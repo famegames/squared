@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "obj_shotgun",
     "eventList": [
-        
+        {
+            "id": "400e6294-321e-481d-8705-239d1f170608",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "c8464033-b6a6-454a-9cfc-a3c3d1de07af"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

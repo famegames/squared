@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "obj_machineGun",
     "eventList": [
-        
+        {
+            "id": "6d4bcb9d-9bb8-450d-a8a2-7eef86ae4298",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "de4d9ab8-6c94-4a5b-9572-818f420167fc"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
