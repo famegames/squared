@@ -14,11 +14,11 @@ gravityIncr = 0.4;
 gravityMax = 10;
 
 // jumpsMax - the maimum amount of jumps the character has
-jumpsMax = 1;
+jumpsMax = 2;
 // jumps - the amount of jumps the player currently has available
 jumps = jumpsMax;
 // jumpSpeed - the speed to set the vspeed negatively to, when jumping
-jumpSpeed = 6;
+jumpSpeed = 8;
 
 // Player - instance id of the controlling player
 Player = noone;
