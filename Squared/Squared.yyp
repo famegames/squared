@@ -162,7 +162,7 @@
             "Key": "7327c3d8-8b9f-45bc-a604-fa9006e49989",
             "Value": {
                 "id": "1879f347-fc0c-4e34-8a7c-fc33fdb38679",
-                "resourcePath": "sprites\\spr_shotgun\\spr_shotgun.yy",
+                "resourcePath": "sprites\\spr_item\\spr_item.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -308,6 +308,14 @@
                 "id": "29a8cde8-b635-47d8-8a7c-492640eba5e5",
                 "resourcePath": "objects\\obj_character\\obj_character.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "e6626164-35a5-47c9-a406-890a3dd9d069",
+            "Value": {
+                "id": "80595691-61cf-45a9-94c9-88048d4b0cfe",
+                "resourcePath": "sprites\\spr_itemDisplay\\spr_itemDisplay.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
