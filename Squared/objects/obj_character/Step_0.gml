@@ -42,3 +42,15 @@ while(!place_free(x+hspeed,y+vspeed)) {
         break;
         }
     }
+
+//Picking up items
+if (keyboard_check(ord("S"))) {
+	with (instance_place(x,y,par_item)) {
+		var i = scr_checkArray(other.Player.inventory);
+		if (i <= 11) {
+			other.Player.inventory[i] = id;
+			x = -32
+			y = -32
+			}
+		}
+	}
