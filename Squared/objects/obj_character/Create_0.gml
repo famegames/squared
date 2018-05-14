@@ -3,6 +3,11 @@
 // moveSpeed - the speed of the character
 moveSpeed = 4;
 
+// Attack variables initialization
+dmg = 0
+fireRate = 0
+range = 0
+
 // gravityIncr - the amount to increment the vspeed by when falling
 gravityIncr = 0.4;
 // gravityMax - the max vertical speed for gravity
