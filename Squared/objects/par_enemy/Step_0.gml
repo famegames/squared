@@ -8,6 +8,38 @@ if (state[0]) {
 		hspeed = -hspeed;
 	}
 
+//Punch when near - If a player is within range, horizontally and vertically, punch that direction
+if (state[1]) {
+	if (canFire) {
+		if((obj_character.y < (y + verticalTol)) and (obj_character.y > (y - verticalTol))) {
+			if ((obj_character.x < x) and (obj_character.x > (x - (range*attackSpeed + attackTol)))) {
+				with (instance_create_layer(x,y,"instances",obj_bullet)) {
+					dmg = other.damage;
+					range = other.range;
+					fireRate = other.fireRate;
+					alarm_set(0,range);
+					speed = other.attackSpeed;
+					direction = 180;
+					other.alarm[0] = 60/fireRate;
+					}
+				canFire = false;
+				}
+			if ((obj_character.x > x) and (obj_character.x < (x + (range*attackSpeed + attackTol)))) {
+				with (instance_create_layer(x,y,"instances",obj_bullet)) {
+					dmg = other.damage;
+					range = other.range;
+					fireRate = other.fireRate;
+					alarm_set(0,range);
+					speed = other.attackSpeed;
+					direction = 0;
+					other.alarm[0] = 60/fireRate;
+					}
+				canFire = false;
+				}
+			}
+		}
+	}
+
 //Set sprite
 if (hspeed > 0)
 	image_index = 0;
