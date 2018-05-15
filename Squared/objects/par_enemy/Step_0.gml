@@ -14,7 +14,8 @@ if (state[1]) {
 		if((obj_character.y < (y + verticalTol)) and (obj_character.y > (y - verticalTol))) {
 			if ((obj_character.x < x) and (obj_character.x > (x - (range*attackSpeed + attackTol)))) {
 				with (instance_create_layer(x,y,"instances",obj_bullet)) {
-					dmg = other.damage;
+					team = -1;
+					dmg = other.dmg;
 					range = other.range;
 					fireRate = other.fireRate;
 					alarm_set(0,range);
@@ -26,7 +27,8 @@ if (state[1]) {
 				}
 			if ((obj_character.x > x) and (obj_character.x < (x + (range*attackSpeed + attackTol)))) {
 				with (instance_create_layer(x,y,"instances",obj_bullet)) {
-					dmg = other.damage;
+					team = -1;
+					dmg = other.dmg;
 					range = other.range;
 					fireRate = other.fireRate;
 					alarm_set(0,range);
@@ -45,3 +47,7 @@ if (hspeed > 0)
 	image_index = 0;
 if (hspeed < 0)
 	image_index = 1;
+	
+//die if dead
+if (hp < 1)
+	instance_destroy();
