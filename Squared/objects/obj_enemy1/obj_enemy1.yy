@@ -4,11 +4,20 @@
     "mvc": "1.0",
     "name": "obj_enemy1",
     "eventList": [
-        
+        {
+            "id": "1e758095-32a8-4406-86b4-8acb94b74a76",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "a86aa409-7b8e-496c-b1de-fb3ae6e0c644"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "parentObjectId": "902be4b8-cdcd-4e9a-bb04-caa541045c99",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
