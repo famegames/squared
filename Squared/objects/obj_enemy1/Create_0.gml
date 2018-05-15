@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description Initialize variables
 
 // Inherit the parent event
 event_inherited();
@@ -14,7 +14,7 @@ image_speed = 0
 //Initialize enemy variables
 hspeed = 4;
 hp = 30;
-damage = 8;
+dmg = 8;
 range = 10;
 fireRate = 5;
 attackSpeed = 10;
