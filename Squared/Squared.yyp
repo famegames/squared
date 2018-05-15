@@ -55,11 +55,35 @@
             }
         },
         {
+            "Key": "0ec07c73-5b06-4874-8105-4410c6d5b69e",
+            "Value": {
+                "id": "96b6837c-272e-4d32-9398-7165e194f0ce",
+                "resourcePath": "sprites\\spr_inventory\\spr_inventory.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "11f5ab23-88b2-4008-a061-4bde26658fa2",
+            "Value": {
+                "id": "92503b72-7d0d-4e95-9c43-74499292bdb7",
+                "resourcePath": "sprites\\spr_equipped\\spr_equipped.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "23a337da-fe41-4ab7-b69a-164deed90ba6",
             "Value": {
                 "id": "9b2603ae-1761-4670-bea0-639cba466904",
                 "resourcePath": "objects\\par_tool\\par_tool.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "3434cdcd-1038-4da9-9dcd-6b53cc76232f",
+            "Value": {
+                "id": "b3928fca-8f94-4afc-bef1-e6afd87d4f49",
+                "resourcePath": "scripts\\scr_checkArray\\scr_checkArray.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -138,7 +162,7 @@
             "Key": "7327c3d8-8b9f-45bc-a604-fa9006e49989",
             "Value": {
                 "id": "1879f347-fc0c-4e34-8a7c-fc33fdb38679",
-                "resourcePath": "sprites\\spr_shotgun\\spr_shotgun.yy",
+                "resourcePath": "sprites\\spr_item\\spr_item.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -287,6 +311,14 @@
             }
         },
         {
+            "Key": "e6626164-35a5-47c9-a406-890a3dd9d069",
+            "Value": {
+                "id": "80595691-61cf-45a9-94c9-88048d4b0cfe",
+                "resourcePath": "sprites\\spr_itemDisplay\\spr_itemDisplay.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "e96efee3-2b21-480c-b16b-67acdb21de3d",
             "Value": {
                 "id": "2e30cfb0-8a85-499c-8f60-9bee4cbc7deb",
@@ -337,7 +369,8 @@
     ],
     "script_order": [
         "f6a24b07-7de6-4773-8f2c-28be8043ff84",
-        "899b35da-3148-4912-a7fe-51f5e8dec820"
+        "899b35da-3148-4912-a7fe-51f5e8dec820",
+        "3434cdcd-1038-4da9-9dcd-6b53cc76232f"
     ],
     "tutorial": ""
 }
