@@ -5,7 +5,7 @@ event_inherited();
 
 // You can write your code in this editor
 state[1] = true;
-state[2] = true;
+state[3] = true;
 canFire = true;
 
 image_index = 0
