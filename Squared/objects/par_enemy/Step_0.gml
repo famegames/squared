@@ -11,32 +11,35 @@ if (state[0]) {
 //Punch when near - If a player is within range, horizontally and vertically, punch that direction
 if (state[1]) {
 	if (canFire) {
-		if((obj_character.y < (y + verticalTol)) and (obj_character.y > (y - verticalTol))) {
-			if ((obj_character.x < x) and (obj_character.x > (x - (range*attackSpeed + attackTol)))) {
-				with (instance_create_layer(x,y,"instances",obj_bullet)) {
-					team = -1;
-					dmg = other.dmg;
-					range = other.range;
-					fireRate = other.fireRate;
-					alarm_set(0,range);
-					speed = other.attackSpeed;
-					direction = 180;
-					other.alarm[0] = 60/fireRate;
+		if (instance_exists(obj_character)) {
+			var NearestPlayer = instance_nearest(x,y,obj_character)
+			if((NearestPlayer.y < (y + verticalTol)) and (NearestPlayer.y > (y - verticalTol))) {
+				if ((NearestPlayer.x < x) and (NearestPlayer.x > (x - (range*attackSpeed + attackTol)))) {
+					with (instance_create_layer(x,y,"instances",obj_bullet)) {
+						team = -1;
+						dmg = other.dmg;
+						range = other.range;
+						fireRate = other.fireRate;
+						alarm_set(0,range);
+						speed = other.attackSpeed;
+						direction = 180;
+						other.alarm[0] = 60/fireRate;
+						}
+					canFire = false;
 					}
-				canFire = false;
-				}
-			if ((obj_character.x > x) and (obj_character.x < (x + (range*attackSpeed + attackTol)))) {
-				with (instance_create_layer(x,y,"instances",obj_bullet)) {
-					team = -1;
-					dmg = other.dmg;
-					range = other.range;
-					fireRate = other.fireRate;
-					alarm_set(0,range);
-					speed = other.attackSpeed;
-					direction = 0;
-					other.alarm[0] = 60/fireRate;
+				if ((NearestPlayer.x > x) and (NearestPlayer.x < (x + (range*attackSpeed + attackTol)))) {
+					with (instance_create_layer(x,y,"instances",obj_bullet)) {
+						team = -1;
+						dmg = other.dmg;
+						range = other.range;
+						fireRate = other.fireRate;
+						alarm_set(0,range);
+						speed = other.attackSpeed;
+						direction = 0;
+						other.alarm[0] = 60/fireRate;
+						}
+					canFire = false;
 					}
-				canFire = false;
 				}
 			}
 		}
