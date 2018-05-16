@@ -4,7 +4,6 @@
 event_inherited();
 
 // You can write your code in this editor
-state[0] = true;
 state[1] = true;
 canFire = true;
 
@@ -12,7 +11,7 @@ image_index = 0
 image_speed = 0
 
 //Initialize enemy variables
-hspeed = 4;
+hspeed = 0;
 hp = 30;
 dmg = 8;
 range = 10;
