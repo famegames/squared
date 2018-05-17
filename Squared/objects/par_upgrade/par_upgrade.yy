@@ -2,7 +2,7 @@
     "id": "b089f48c-4392-4186-beb9-52deda1ec58a",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "par_parentupgrade",
+    "name": "par_upgrade",
     "eventList": [
         
     ],
