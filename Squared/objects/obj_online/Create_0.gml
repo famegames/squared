@@ -22,15 +22,17 @@ recieverServer = network_create_server(network_socket_udp, broadcastPort, 100);
 
 // setup menu
 // create text boxes
-directIp = instance_create_layer(154+32+64, room_height-32, "instances", obj_textBox);
-playerName = instance_create_layer(room_width-(200+154+32+64), room_height-32, "instances", obj_textBox);
+directIp = instance_create_layer(room_width/2-196, room_height-32, "instances", obj_textBox);
+directIp.title = "Direct IP: ";
+playerName = instance_create_layer(room_width-(200+32+64), room_height-32, "instances", obj_textBox);
+playerName.title = "Name: ";
 
 // attempt to load player
 if (scr_loadOnlinePlayer() == false)
 {
 	// set defaults
-	directIp = "127.0.0.1";
-	playerName = "Newbius";
+	directIp.text = "127.0.0.1";
+	playerName.text = "Newbius";
 }
 
 // online - whether the game is online

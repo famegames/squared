@@ -1,7 +1,7 @@
 /// @description Cleanup
 
 // save online player information
-scr_saveOninePlayer();
+scr_saveOnlinePlayer();
 
 // destroy broadcast reciver network
 network_destroy(recieverServer);

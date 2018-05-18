@@ -22,12 +22,13 @@ with (instance_create_layer(96, rh-32, "instances", obj_button))
 	ds_list_add(other.buttons, self);
 }
 // join
-with (instance_create_layer(96+32+200+154+64*2, rh - 32, "instances", obj_button))
+with (instance_create_layer(room_width/2, rh - 32, "instances", obj_button))
 {
 	action = "directConnect";
-	title = "join";
+	title = "direct";
 	ds_list_add(other.buttons, self);
 }
+// host
 with (instance_create_layer(rw - 96, rh - 32, "instances", obj_button))
 {
 	action = "createServer";
