@@ -50,6 +50,9 @@ if (state[2]) {
 						dmg = other.dmg;
 						range = other.range;
 						fireRate = other.fireRate;
+						homingLevel = other.homingLevel;
+						multishot = other.multishot;
+						explosion = other.explosion;
 						alarm_set(0,range);
 						speed = other.attackSpeed;
 						direction = 180;
@@ -63,6 +66,9 @@ if (state[2]) {
 						dmg = other.dmg;
 						range = other.range;
 						fireRate = other.fireRate;
+						homingLevel = other.homingLevel;
+						multishot = other.multishot;
+						explosion = other.explosion;
 						alarm_set(0,range);
 						speed = other.attackSpeed;
 						direction = 0;
@@ -85,6 +91,9 @@ if (state[3]) {
 					dmg = other.dmg;
 					range = other.range;
 					fireRate = other.fireRate;
+					homingLevel = other.homingLevel;
+					multishot = other.multishot;
+					explosion = other.explosion;
 					alarm_set(0,range);
 					speed = other.attackSpeed;
 					direction = point_direction(other.x,other.y,NearestPlayer.x,NearestPlayer.y);

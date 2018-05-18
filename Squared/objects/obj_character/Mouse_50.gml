@@ -6,6 +6,9 @@ if (instance_exists(Player.inventory[0])) {
 			dmg = other.Player.inventory[0].dmg;
 			range = other.Player.inventory[0].range;
 			fireRate = other.Player.inventory[0].fireRate;
+			homingLevel = other.Player.inventory[0].homingLevel;
+			multishot = other.Player.inventory[0].multishot;
+			explosion = other.Player.inventory[0].explosion;
 			alarm_set(0,range);
 			speed = 10;
 			direction = point_direction(x,y,mouse_x,mouse_y);

@@ -9,3 +9,6 @@ image_speed = 0.05;
 // 2 = range
 
 upgradeId = 0;
+
+//inherit event
+event_inherited();

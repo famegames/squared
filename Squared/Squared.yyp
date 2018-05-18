@@ -423,10 +423,26 @@
             }
         },
         {
+            "Key": "e8229ce7-6818-4307-b394-ff47da4cb1af",
+            "Value": {
+                "id": "9dfb1210-87d5-45ef-8f1d-fec9044cea43",
+                "resourcePath": "sprites\\spr_coolUpgrade\\spr_coolUpgrade.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "e96efee3-2b21-480c-b16b-67acdb21de3d",
             "Value": {
                 "id": "2e30cfb0-8a85-499c-8f60-9bee4cbc7deb",
                 "resourcePath": "objects\/par_item\/par_item.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "f00ccacf-df82-4fd5-8f79-f4e11255a325",
+            "Value": {
+                "id": "5a066382-fec7-4ef3-a46a-3eb2c58d9388",
+                "resourcePath": "objects\\obj_homingUpgrade\\obj_homingUpgrade.yy",
                 "resourceType": "GMObject"
             }
         },
