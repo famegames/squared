@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "par_upgrade",
     "eventList": [
-        
+        {
+            "id": "1ee122af-ef13-4b20-a588-7ca78021bbdd",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 10,
+            "eventtype": 7,
+            "m_owner": "b089f48c-4392-4186-beb9-52deda1ec58a"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
