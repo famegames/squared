@@ -28,5 +28,19 @@ inputFreeze = 0;
 // inputFreezeMax
 inputFreezeMax = 4;
 
+/// set player variables
+players = ds_list_create();
+// teams - the player's team
+teams = ds_list_create();
+// names - name of the player
+names = ds_list_create();
+// readys - if player is ready
+readys = ds_list_create();
+// localControls - list holding which local players are in
+localControls = ds_list_create();
+
+// localPlayers - hold all the local player input objects
+localPlayers = ds_map_create();
+
 // initiate the main menu
 scr_menuInitMain();

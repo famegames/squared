@@ -9,11 +9,19 @@ switch (action)
 		break;
 	case "online":
 		// online game
-		with (global.Menu) scr_stateSwitch(STATE_MAIN, STATE_ONLINE);
+		scr_stateSwitch(STATE_MAIN, STATE_ONLINE);
 		break;
+	case "createServer":
+        // host server
+        with (global.OnlineObject) event_user(1);
+        break;
+    case "directConnect":
+        // direct connect
+        with (global.OnlineObject) event_user(2);
+        break;
 	case "backMainOnline":
         // return to main menu from the online menu
-        with (global.Menu) scr_stateSwitch(STATE_ONLINE, STATE_MAIN);
+        scr_stateSwitch(STATE_ONLINE, STATE_MAIN);
         break;
 	case "quit":
 		// quit game

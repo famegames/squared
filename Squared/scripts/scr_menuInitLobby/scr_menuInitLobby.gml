@@ -13,7 +13,7 @@ selected = 0;
 
 // back
 var button = instance_create_layer(96, room_height-32, "instances", obj_button);
-if (previous == STATE_ONLINE) 
+if (from == STATE_ONLINE) 
     button.action = "backOnlineLobby";
 else
     button.action = "backMainLobby";

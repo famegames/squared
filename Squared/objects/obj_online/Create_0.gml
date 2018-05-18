@@ -1,13 +1,15 @@
 /// @description Setup to connect online
 
 // define macros
-#macro broadcastPort 6511
-#macro gamePort 6510
+#macro BROADCAST_PORT 6511
+#macro GAME_PORT 6510
 
 // Server - the id of the server instance
 global.Server = noone;
 // mainServer - whether this game is the main server
 global.mainServer = false;
+// OnlineObject - online tracking object, this
+global.OnlineObject = self;
 
 // connectIp - the ip to connect to
 connectIp = "127.0.0.1";
@@ -18,7 +20,7 @@ serverList = ds_list_create();
 serverNames = ds_list_create();
 
 // create the broadcast reciever server
-recieverServer = network_create_server(network_socket_udp, broadcastPort, 100);
+recieverServer = network_create_server(network_socket_udp, BROADCAST_PORT, 100);
 
 // setup menu
 // create text boxes
