@@ -5,9 +5,11 @@ switch (action)
 {
 	case "local":
 		// local game
+		room_goto(room0);
 		break;
 	case "online":
 		// online game
+		with (global.Menu) scr_stateSwitch(STATE_MAIN, STATE_ONLINE);
 		break;
 	case "quit":
 		// quit game
