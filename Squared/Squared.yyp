@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "01e26a23-6514-41c2-92f5-e8c6ea4b0329",
+            "Value": {
+                "id": "8c27f914-3d27-456c-b226-a464dec8349e",
+                "resourcePath": "scripts\\scr_checkArrayUpgrade\\scr_checkArrayUpgrade.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "01ebe4bb-f0cc-45e5-9846-aea1e6af05db",
             "Value": {
                 "id": "718e2cad-0c0a-476d-8716-c2ec608304d3",
@@ -467,6 +475,7 @@
         "f6a24b07-7de6-4773-8f2c-28be8043ff84",
         "899b35da-3148-4912-a7fe-51f5e8dec820",
         "3434cdcd-1038-4da9-9dcd-6b53cc76232f",
+        "01e26a23-6514-41c2-92f5-e8c6ea4b0329",
         "aa69466b-84c3-4507-a45e-0bd60fae9fef"
     ],
     "tutorial": ""
