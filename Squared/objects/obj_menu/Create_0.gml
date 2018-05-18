@@ -3,6 +3,10 @@
 // Main - global refernce variable
 global.Menu = id;
 
+// globals
+// onnline - whether the game is being played online
+global.online = false;
+
 // state macros
 #macro STATE_MAIN 0
 #macro STATE_LOBBY 1
