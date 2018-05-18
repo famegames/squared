@@ -1,6 +1,6 @@
 /// @description Cycle upgrade Id
 
-var upgradeId = image_number;
+var upgradeId = image_index;
 
 switch (upgradeId) {
 	case 0:
