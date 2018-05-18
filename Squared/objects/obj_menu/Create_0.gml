@@ -9,3 +9,6 @@
 
 // state - the current state of the game
 state = STATE_MAIN;
+
+// buttons - list of all buttons on the current menu
+buttons = ds_list_create();
