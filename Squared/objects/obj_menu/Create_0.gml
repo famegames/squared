@@ -12,3 +12,6 @@ state = STATE_MAIN;
 
 // buttons - list of all buttons on the current menu
 buttons = ds_list_create();
+
+// initiate the main menu
+scr_menuInitMain();
