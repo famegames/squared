@@ -295,6 +295,14 @@
             }
         },
         {
+            "Key": "c0619e3b-035a-4d61-bf74-f63f0052129f",
+            "Value": {
+                "id": "54410ce7-5dae-4531-b4d1-0fe5a9c78365",
+                "resourcePath": "objects\\obj_multishotUpgrade\\obj_multishotUpgrade.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "c2e9ad9f-21e0-4688-9880-709350b427ba",
             "Value": {
                 "id": "91220053-0105-482b-9ddf-06771f7ca218",

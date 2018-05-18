@@ -8,6 +8,8 @@ if (instance_exists(Player.inventory[0])) {
 			fireRate = other.Player.inventory[0].fireRate;
 			homingLevel = other.Player.inventory[0].homingLevel;
 			multishot = other.Player.inventory[0].multishot;
+			if (multishot > 0)
+				alarm_set(2,1);
 			explosion = other.Player.inventory[0].explosion;
 			alarm_set(0,range);
 			speed = 10;
