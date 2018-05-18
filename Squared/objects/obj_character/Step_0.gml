@@ -51,6 +51,7 @@ if (keyboard_check(ord("S"))) {
 			other.Player.inventory[i] = id;
 			x = -32
 			y = -32
+			image_speed = 0;
 			}
 		}
 	}

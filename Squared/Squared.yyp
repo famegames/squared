@@ -170,7 +170,7 @@
             "Key": "47b011a3-a081-4935-b1f6-421b100fe039",
             "Value": {
                 "id": "96cab73c-a39b-4b0d-b583-217138b32c29",
-                "resourcePath": "sprites\/spr_machineGun\/spr_machineGun.yy",
+                "resourcePath": "sprites\\spr_basicUpgrade\\spr_basicUpgrade.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -228,6 +228,14 @@
                 "id": "12ec7f38-ed72-494c-a179-bf11735d3068",
                 "resourcePath": "scripts\/scr_reduce\/scr_reduce.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "8d21efaa-30c0-452d-8138-659e414ed029",
+            "Value": {
+                "id": "e4da5135-85c8-4e7c-ad8c-589deba46c51",
+                "resourcePath": "objects\\obj_basicUpgrade\\obj_basicUpgrade.yy",
+                "resourceType": "GMObject"
             }
         },
         {
