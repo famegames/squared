@@ -10,6 +10,9 @@ var to = argument1;
 // clear previous menu
 scr_menuClear();
 
+// set state
+state = to;
+
 // switch menu state
 switch (from)
 {
@@ -20,5 +23,20 @@ switch (from)
 				// initiate online menu
 				scr_menuInitOnline();
 				break;
+		}
+	case STATE_ONLINE:
+        switch (to)
+		{
+            case STATE_LOBBY:
+                // initiate lobby menu
+                scr_menuInitLobby(from);
+                break;
+            case STATE_MAIN:
+                // return to main menu
+                with (obj_online) event_user(0);
+					
+                // initiate main menu
+                scr_menuInitMain();
+                break;
 		}
 }
