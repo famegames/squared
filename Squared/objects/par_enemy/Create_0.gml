@@ -30,3 +30,8 @@ tryToJump = true;
 canReverse = true;
 // The delay to reset the enemy reversing directions
 canReverseDelay = 70;
+
+//Initialize upgrades
+homingLevel = 0;
+multishot = 0;
+explosion = 0;

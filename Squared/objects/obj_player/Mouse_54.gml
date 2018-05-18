@@ -11,12 +11,17 @@ if (inventoryOpen) {
 				if ((mouse_x >= ((room_width/2)-(208/2)+4*(j+1)+64*j)) and (mouse_x <= (((room_width/2)-(208/2)+4*(j+1)+64*j)) + 64)) {
 					if ((mouse_y >= ((room_height/2)-(208/2)+4*(i+1)+64*i)) and (mouse_y <= ((room_height/2)-(208/2)+4*(i+1)+64*i) + 64)) {
 						if (object_is_ancestor(inventory[currentIndex].object_index,par_upgrade)) {
-							if (object_is_ancestor(inventory[1].object_index,par_toolModular)) {
-								with (inventory[1]) {
-									dmg += other.inventory[other.currentIndex].dmg;
-									fireRate += other.inventory[other.currentIndex].fireRate;
-									range += other.inventory[other.currentIndex].range;
-									instance_destroy(other.inventory[other.currentIndex]);
+							if (instance_exists(inventory[1])) {
+								if (object_is_ancestor(inventory[1].object_index,par_toolModular)) {
+									with (inventory[1]) {
+										dmg += other.inventory[other.currentIndex].dmg;
+										fireRate += other.inventory[other.currentIndex].fireRate;
+										range += other.inventory[other.currentIndex].range;
+										homingLevel += other.inventory[other.currentIndex].homingLevel;
+										multishot += other.inventory[other.currentIndex].multishot;
+										explosion += other.inventory[other.currentIndex].explosion;
+										instance_destroy(other.inventory[other.currentIndex]);
+										}
 									}
 								}
 							}
