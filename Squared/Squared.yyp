@@ -271,6 +271,14 @@
             }
         },
         {
+            "Key": "aa69466b-84c3-4507-a45e-0bd60fae9fef",
+            "Value": {
+                "id": "eaa328b8-a118-4063-9f33-1e5cd1cfba6b",
+                "resourcePath": "scripts\\scr_itemInventoryDisplay\\scr_itemInventoryDisplay.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "b089f48c-4392-4186-beb9-52deda1ec58a",
             "Value": {
                 "id": "a59f4ed2-88fb-4b3e-8dc6-b4246a2446af",
