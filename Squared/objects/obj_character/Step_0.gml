@@ -47,6 +47,8 @@ while(!place_free(x+hspeed,y+vspeed)) {
 if (keyboard_check(ord("S"))) {
 	with (instance_place(x,y,par_item)) {
 		var i = scr_checkArray(other.Player.inventory);
+		if (object_is_ancestor(object_index,par_upgrade))
+			var i = scr_checkArrayUpgrade(other.Player.inventory);
 		if (i <= 11) {
 			other.Player.inventory[i] = id;
 			x = -32
