@@ -3,9 +3,6 @@
 // moveSpeed - the speed of the character
 moveSpeed = 4;
 
-//Set health
-hp = 100
-
 //enable after fireRate delay has passed
 canFire = true
 

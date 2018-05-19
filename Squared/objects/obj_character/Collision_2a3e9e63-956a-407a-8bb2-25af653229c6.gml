@@ -11,6 +11,6 @@ if (other.team != Player.team) {
 	}
 
 if (other.team != Player.team) {
-	hp -= other.dmg;
+	Player.hp -= other.dmg;
 	instance_destroy(other);
 	}
