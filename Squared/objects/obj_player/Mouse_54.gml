@@ -21,6 +21,7 @@ if (inventoryOpen) {
 										multishot += other.inventory[other.currentIndex].multishot;
 										explosion += other.inventory[other.currentIndex].explosion;
 										instance_destroy(other.inventory[other.currentIndex]);
+										other.inventory[other.currentIndex] = noone;
 										}
 									}
 								}
