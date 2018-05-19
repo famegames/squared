@@ -12,7 +12,7 @@ image_index = 0
 image_speed = 0
 
 //Initialize enemy variables
-startingFireRate = 8;
+startingFireRate = 10;
 enemySpeed = 3;
 hp = 50;
 dmg = 4;
