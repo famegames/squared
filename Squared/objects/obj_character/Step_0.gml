@@ -59,5 +59,5 @@ if (keyboard_check(ord("S"))) {
 	}
 
 //Check for dying
-if (hp < 1)
+if (Player.hp < 1)
 	instance_destroy();
