@@ -56,7 +56,7 @@ if (state[2]) {
 						alarm_set(0,range);
 						speed = other.attackSpeed;
 						direction = 180;
-						other.alarm[0] = 60/fireRate;
+						other.alarm[0] = fireRate;
 						}
 					canFire = false;
 					}
@@ -72,7 +72,7 @@ if (state[2]) {
 						alarm_set(0,range);
 						speed = other.attackSpeed;
 						direction = 0;
-						other.alarm[0] = 60/fireRate;
+						other.alarm[0] = fireRate;
 						}
 					canFire = false;
 					}
@@ -97,7 +97,7 @@ if (state[3]) {
 					alarm_set(0,range);
 					speed = other.attackSpeed;
 					direction = point_direction(other.x,other.y,NearestPlayer.x,NearestPlayer.y);
-					other.alarm[0] = 60/fireRate;
+					other.alarm[0] = fireRate;
 					}
 				canFire = false;
 				}

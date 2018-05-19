@@ -10,7 +10,7 @@ switch (upgradeId) {
 		break;
 	case 1:
 		dmg = 0;
-		fireRate = 3;
+		fireRate = -2;
 		range = 0;
 		break;
 	case 2:
