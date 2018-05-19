@@ -323,6 +323,10 @@
             "Value": {
                 "id": "0e401534-d1d4-417b-8437-e76c2121ec4d",
                 "resourcePath": "objects\\obj_explosion\\obj_explosion.yy",
+				"resourceType": "GMObject"
+			}
+		},
+        {
             "Key": "80a7b592-fba0-4db0-90d0-e68afb0801b1",
             "Value": {
                 "id": "f22e584e-b0c6-40f6-9cd6-1760b15f7f80",
@@ -455,6 +459,10 @@
             "Value": {
                 "id": "54410ce7-5dae-4531-b4d1-0fe5a9c78365",
                 "resourcePath": "objects\\obj_multishotUpgrade\\obj_multishotUpgrade.yy",
+				"resourceType": "GMObject"
+			}
+        },
+        {
             "Key": "b0c5ab7e-440f-40a6-93ad-7572450099ac",
             "Value": {
                 "id": "bd7e83fb-cff4-41c9-bbc9-4d0c02bd9ad7",
@@ -740,7 +748,6 @@
         "899b35da-3148-4912-a7fe-51f5e8dec820",
         "3434cdcd-1038-4da9-9dcd-6b53cc76232f",
         "01e26a23-6514-41c2-92f5-e8c6ea4b0329",
-        "aa69466b-84c3-4507-a45e-0bd60fae9fef"
         "aa69466b-84c3-4507-a45e-0bd60fae9fef",
         "1a711590-1702-4f6f-a508-b2945c9661cd",
         "8d6b4f08-27dc-4144-9461-891c33c6bce9",
