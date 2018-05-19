@@ -15,6 +15,7 @@ gravityMax = 10;
 jumpsMax = 2;
 // jumps - the amount of jumps the player currently has available
 jumps = jumpsMax;
+
 // jumpSpeed - the speed to set the vspeed negatively to, when jumping
 jumpSpeed = 8;
 
