@@ -14,7 +14,7 @@ if (instance_exists(Player.inventory[1])) {
 			alarm_set(0,range);
 			speed = 10;
 			direction = point_direction(x,y,mouse_x,mouse_y);
-			other.alarm[0] = 60/fireRate;
+			other.alarm[0] = fireRate;
 			}
 		canFire = false
 		}

@@ -12,13 +12,13 @@ image_index = 0
 image_speed = 0
 
 //Initialize enemy variables
-startingSpeed = 5;
-enemySpeed = startingSpeed;
-hp = 35;
-dmg = 6;
-range = 15;
-fireRate = 18;
+startingFireRate = 10;
+enemySpeed = 3;
+hp = 50;
+dmg = 4;
+range = 12;
+fireRate = startingFireRate;
 attackSpeed = 10;
-attackTol = 48;  //Number of pixels away after range*attackSpeed the enemy must be before attacking
+attackTol = 64;  //Number of pixels away after range*attackSpeed the enemy must be before attacking
 verticalTol = 64; //Number of pixels above or below the player must be before attacking
-trigAttackedReset = 20;  //Number of steps to perform trigAttacked action
+trigAttackedReset = 30;  //Number of steps to perform trigAttacked action

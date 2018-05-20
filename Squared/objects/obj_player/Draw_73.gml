@@ -1,5 +1,6 @@
 /// @description Draw the inventory
 
+
 //draw spr_equipped
 draw_sprite(spr_equipped,-1,0,room_height-64)
 //Draw equipped sprites

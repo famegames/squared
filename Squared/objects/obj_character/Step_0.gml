@@ -46,9 +46,10 @@ while(!place_free(x+hspeed,y+vspeed)) {
 //Picking up items
 if (keyboard_check(ord("S"))) {
 	with (instance_place(x,y,par_item)) {
-		var i = scr_checkArray(other.Player.inventory);
 		if (object_is_ancestor(object_index,par_upgrade))
 			var i = scr_checkArrayUpgrade(other.Player.inventory);
+		else
+			var i = scr_checkArray(other.Player.inventory);
 		if (i <= 11) {
 			other.Player.inventory[i] = id;
 			x = -32
@@ -59,5 +60,5 @@ if (keyboard_check(ord("S"))) {
 	}
 
 //Check for dying
-if (hp < 1)
+if (Player.hp < 1)
 	instance_destroy();
