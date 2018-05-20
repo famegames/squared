@@ -16,6 +16,7 @@ fireRate = 40;
 range = 15;
 image_index = 3;
 image_speed = 0;
+depth = 0;
 
 //Also inherit parents code
 event_inherited()
