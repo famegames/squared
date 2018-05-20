@@ -23,7 +23,7 @@ if (instance_exists(Player.inventory[1])) {
 	
 if (instance_exists(Player.inventory[0])) {
 	if (canFire) {
-		with (thrown = instance_create_layer(x,y,"instances",obj_grenade)) {
+		with (instance_create_layer(x,y,"instances",obj_grenade)) {
 			team = 0;
 			dmg = other.Player.inventory[0].dmg;
 			range = other.Player.inventory[0].range;
