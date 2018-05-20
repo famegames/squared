@@ -3,6 +3,7 @@
 if (instance_exists(Player.inventory[1])) {
 	if (canFire) {
 		with (instance_create_layer(x,y,"instances",obj_grenade)) {
+			thrown = instance_nearest(obj_character.x, obj_character.y, obj_grenade)
 			team = 0;
 			dmg = other.Player.inventory[1].dmg;
 			range = other.Player.inventory[1].range;
@@ -24,6 +25,7 @@ if (instance_exists(Player.inventory[1])) {
 if (instance_exists(Player.inventory[0])) {
 	if (canFire) {
 		with (instance_create_layer(x,y,"instances",obj_grenade)) {
+			thrown = instance_nearest(obj_character.x, obj_character.y, obj_grenade)
 			team = 0;
 			dmg = other.Player.inventory[0].dmg;
 			range = other.Player.inventory[0].range;
