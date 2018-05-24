@@ -11,6 +11,9 @@ if (instance_exists(inventory[1])) {
 	scr_itemInventoryDisplay(inventory[1], 72, room_height-64);
 	}
 
+//Draw Score
+draw_text(608,16,score);
+
 //Draw inventory
 if (inventoryOpen) {
 	//Draw spr_inventory
