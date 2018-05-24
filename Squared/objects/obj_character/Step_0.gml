@@ -62,3 +62,9 @@ if (keyboard_check(ord("S"))) {
 //Check for dying
 if (Player.hp < 1)
 	instance_destroy();
+
+//Check for winning
+if (not(instance_exists(obj_door))) {
+	if (place_meeting(x,y,obj_win))
+		room_goto_next();
+	}
