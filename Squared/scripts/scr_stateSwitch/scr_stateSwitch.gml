@@ -46,6 +46,10 @@ with (global.Menu)
 			break;
 		case STATE_LOBBY:
             switch (to) {
+				case STATE_GAME:
+					// goto room
+					room_goto(rm1_1);
+					break;
                 case STATE_MAIN:
                     // drop players
                     with (obj_menu) event_user(0);

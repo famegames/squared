@@ -45,3 +45,35 @@ switch(networkState)
         scr_sendPing();
         break;
     }
+
+/// Send input
+var controls = 0;
+var amount = array_length_2d(global.controls, controls);
+
+// send input according to type
+switch (global.controls[controls, KEY_TYPE]) {
+    case CONTROLS_KEYBOARD:
+        for (var i = 0; i < amount-1; i++;) {
+            // input the input state
+            var input = scr_getKeyInput(global.controls[controls, i]);
+            if (input == KEY_PRESSED || input == KEY_RELEASED)
+				scr_sendInput(i, input);
+            }
+        break;
+    case CONTROLS_MOUSE:
+        for (var i = 0; i < amount-3; i++;) {
+            // input the input state
+            var input = scr_getKeyInput(global.controls[controls, i]);
+            if (input == KEY_PRESSED || input == KEY_RELEASED)
+				scr_sendInput(i, input);
+            }
+        for (var i = amount-3; i < amount-1; i++;) {
+            // input the input state
+            var input = scr_getMouseInput(global.controls[controls, i]);
+            if (input == KEY_PRESSED || input == KEY_RELEASED)
+				scr_sendInput(i, input);
+            }
+        break;
+    default:
+        // joystick input
+    }

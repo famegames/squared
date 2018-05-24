@@ -20,6 +20,8 @@ ip = 0;
 // dropBuffer - steps before a client is dropped, from not recieving a ping
 dropBuffer = 60;
 
+// inputs - array holding the current state of each input
+inputs = array_create(array_length_2d(global.controls, 0));
 // mouse input
 mouseX = 0;
 mouseY = 0;
