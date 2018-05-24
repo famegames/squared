@@ -306,7 +306,7 @@
             "Key": "4ec8c470-a468-4bc4-82a6-8da15030ccf7",
             "Value": {
                 "id": "a6f368d6-dfb2-4571-b11f-0d837e65ddbe",
-                "resourcePath": "rooms\\rm1_1\\rm1_1.yy",
+                "resourcePath": "rooms\\rm_blank\\rm_blank.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -447,6 +447,14 @@
             }
         },
         {
+            "Key": "7e71e44b-d3ea-4cd6-a7e9-88390f77ddbc",
+            "Value": {
+                "id": "b939cf82-fef1-4404-813b-e60a7dc0f12f",
+                "resourcePath": "rooms\\rm_1_1\\rm_1_1.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "80a7b592-fba0-4db0-90d0-e68afb0801b1",
             "Value": {
                 "id": "f22e584e-b0c6-40f6-9cd6-1760b15f7f80",
@@ -468,6 +476,14 @@
                 "id": "f15e993c-0072-4fd9-b8b5-0dd9d1d392bc",
                 "resourcePath": "scripts\\scr_toggleKey\\scr_toggleKey.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "8460e86b-0d1c-4272-8c52-4f12e7d2c4e9",
+            "Value": {
+                "id": "c0978319-2cee-4d4a-8bd3-ef190465595f",
+                "resourcePath": "objects\\obj_win\\obj_win.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -548,6 +564,14 @@
                 "id": "7bd5d640-9154-4260-8c0a-e4b03929c101",
                 "resourcePath": "rooms\/room0\/room0.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "953752ea-e560-44fb-9239-daae5b080113",
+            "Value": {
+                "id": "e809f4af-2dd2-48a2-b8bf-c537271a2035",
+                "resourcePath": "sprites\\spr_Win\\spr_Win.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

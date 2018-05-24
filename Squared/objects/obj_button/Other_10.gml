@@ -5,7 +5,7 @@ switch (action)
 {
 	case "local":
 		// local game
-		room_goto(room0);
+		room_goto(rm_1_1);
 		break;
 	case "online":
 		// online game
