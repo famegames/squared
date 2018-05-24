@@ -14,7 +14,7 @@ if (clientDebug) {
     
     // setup drawing
     draw_set_halign(fa_left);
-    draw_set_font(fnt_command);
+    draw_set_font(fnt_debug);
     draw_set_color(c_red);
     
     // draw client informtion
@@ -27,7 +27,7 @@ if (clientDebug) {
     drawOffset++;// skip a space
     draw_text(10, 30+yOffset*drawOffset++, "Client State Info:");
     draw_text(10, 30+yOffset*drawOffset++, "Client Socket: " + string(client));
-    draw_text(10, 30+yOffset*drawOffset++, "Network State: " + scr_networkStateToString(global.NetworkState));
+    draw_text(10, 30+yOffset*drawOffset++, "Network State: " + scr_networkStateToString(networkState));
     
     // reset alpha
     draw_set_alpha(1);

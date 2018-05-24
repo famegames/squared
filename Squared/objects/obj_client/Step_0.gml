@@ -39,7 +39,7 @@ switch(networkState)
         break;
     case(NETWORK_LOGIN): //login 
         //client has connected to the server, so send our "player name"
-        scr_sendLogin(PlayerName);
+        scr_sendLogin(playerName);
         break;
     case(NETWORK_PLAY): //game is running
         scr_sendPing();

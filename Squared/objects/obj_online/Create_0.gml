@@ -9,7 +9,7 @@ global.Server = noone;
 // mainServer - whether this game is the main server
 global.mainServer = false;
 // OnlineObject - online tracking object, this
-global.OnlineObject = self;
+global.OnlineObject = id;
 
 // connectIp - the ip to connect to
 connectIp = "127.0.0.1";
