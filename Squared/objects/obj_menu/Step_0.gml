@@ -140,7 +140,7 @@ if !(instance_exists(obj_inputMessage)) {
 			                var inst = ds_map_find_value(Server.Clients, ip);
                 
 			                // other input
-			                var playerIndex = ds_list_find_index(players, inst.connectID);
+			                var playerIndex = ds_list_find_index(players, inst.connectIndex);
 
 			                // initiate input
 			                var vaxis = 0;
@@ -168,14 +168,14 @@ if !(instance_exists(obj_inputMessage)) {
 			                    inst.inputs[RIGHT_KEY] = scr_toggleKey(inst.inputs[RIGHT_KEY]);
 			                    }
 			                if (inst.inputs[LEFTSELC_KEY] == KEY_PRESSED) {
-			                    ds_list_replace(readys, playerIndex, scr_toggle(ds_list_find_value(readys, playerIndex)));
+			                    ds_list_replace(readys, playerIndex, not(ds_list_find_value(readys, playerIndex)));
 			                    // unpress key
 			                    inst.inputs[LEFTSELC_KEY] = scr_toggleKey(inst.inputs[LEFTSELC_KEY]);
 			                    }
                 
 			                // teams
-			                var newTeam = scr_incrementInBounds(ds_list_find_value(teams, playerIndex), vaxis, 0, teamMax, true);
-			                ds_list_replace(teams, playerIndex, newTeam);
+			                //var newTeam = scr_incrementInBounds(ds_list_find_value(teams, playerIndex), vaxis, 0, teamMax, true);
+			                //ds_list_replace(teams, playerIndex, newTeam);
 			                }
         
 			            // if there is a player in the lobby
@@ -194,7 +194,7 @@ if !(instance_exists(obj_inputMessage)) {
 			                    show_debug_message("All ready!");
                     
 			                    // switch to path menu
-			                    event_user(1);
+			                    scr_stateSwitch(STATE_LOBBY, STATE_GAME);
 			                    }
 			                }
 			            }
@@ -204,7 +204,7 @@ if !(instance_exists(obj_inputMessage)) {
                 if (action) {
                     //check if button exists
                     var button = ds_list_find_value(buttons, selectedButton);
-                    if (ds_list_size(buttons) > 0 && instance_exists(button)) {
+                    if (ds_list_size(buttons) > 0 && !is_undefined(button) && instance_exists(button)) {
                         with (button) {
                             event_user(0);
                             }
@@ -215,12 +215,13 @@ if !(instance_exists(obj_inputMessage)) {
             case STATE_GAME:
                 break; // do nothing
             default:
+				if (ds_list_size(buttons) > 0) {
                 //button controls
                 var button = ds_list_find_value(buttons, selectedButton);
                 
                 // selector
-                if (!is_undefined(button)) {
-                    if (instance_exists(button) && button.action == "value" || button.action == "valueAction")
+                if (instance_exists(button)) {
+                    if (button.action == "value" || button.action == "valueAction")
                         selectedButton = scr_incrementInBounds(selectedButton, vaxis, 0, ds_list_size(buttons)-1, true);
                     else
                         selectedButton = scr_incrementInBounds(selectedButton, haxis+vaxis, 0, ds_list_size(buttons)-1, true);
@@ -229,7 +230,7 @@ if !(instance_exists(obj_inputMessage)) {
                     selectedButton = scr_incrementInBounds(selectedButton, haxis+vaxis, 0, ds_list_size(buttons)-1, true);
                                 
                 //check if button exists
-                if (ds_list_size(buttons) > 0 && instance_exists(button)) {
+                if (instance_exists(button)) {
                     // check if value button
                     if (button.action == "value") {
                         // adjust value
@@ -253,6 +254,7 @@ if !(instance_exists(obj_inputMessage)) {
                 if (haxis != 0 || vaxis != 0 || action != false)
                     inputBuffer = inputBufferMax;
                 break;
+				}
             }
         }
     else inputBuffer--;

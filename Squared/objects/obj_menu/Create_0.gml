@@ -36,6 +36,8 @@ inputFreezeMax = 4;
 players = ds_list_create();
 // teams - the player's team
 teams = ds_list_create();
+// teamMax - the max amount of teams
+teamMax = 1;
 // names - name of the player
 names = ds_list_create();
 // readys - if player is ready
@@ -62,4 +64,6 @@ global.controls[player, UP_KEY] = vk_up;
 global.controls[player, DOWN_KEY] = vk_down;
 global.controls[player, ACTION_KEY] = vk_numpad0;         // jump
 global.controls[player, ACTION2_KEY] = vk_numpad3;   // selection
+global.controls[player, LEFTSELC_KEY] = vk_numpad1;  // ice
+global.controls[player, RIGHTSELC_KEY] = vk_numpad2; // fire
 global.controls[player, KEY_TYPE] = CONTROLS_KEYBOARD;

@@ -19,6 +19,15 @@
     if !(is_undefined(inst)) {
         // handle depending on command
         switch (cmd) {
+			case INPUT_CMD:
+				// read the control that was sent
+				var control = buffer_read(buff, buffer_u8);
+		        // and it's up/down state
+		        var state = buffer_read(buff, buffer_u8);
+				
+				// set its state
+				inst.inputs[control] = state;
+				break;
             case PING_CMD:
                 // client message, confirm login
                 ds_map_replace(clientMessages, ip, SERVER_PLAY);  
