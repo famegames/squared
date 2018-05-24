@@ -1,5 +1,5 @@
 /// @description Draw menus
-
+		
 /// Lobby menu
 switch (state) {
 	case STATE_LOBBY:
