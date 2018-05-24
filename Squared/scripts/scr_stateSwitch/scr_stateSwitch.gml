@@ -3,15 +3,16 @@
 /// @argument form id of state to switch from
 /// @argument to id of state to switch to
 
-// set input
-var from = argument0;
-var to = argument1;
 
 with (global.Menu)
 {
+	// set input
+	var from = argument0;
+	var to = argument1;
+
 	// clear previous menu
 	scr_menuClear();
-
+	
 	// set state
 	state = to;
 
@@ -26,6 +27,7 @@ with (global.Menu)
 					scr_menuInitOnline();
 					break;
 			}
+			break;
 		case STATE_ONLINE:
 	        switch (to)
 			{
@@ -41,8 +43,13 @@ with (global.Menu)
 	                scr_menuInitMain();
 	                break;
 			}
+			break;
 		case STATE_LOBBY:
             switch (to) {
+				case STATE_GAME:
+					// goto room
+					room_goto(rm1_1);
+					break;
                 case STATE_MAIN:
                     // drop players
                     with (obj_menu) event_user(0);
