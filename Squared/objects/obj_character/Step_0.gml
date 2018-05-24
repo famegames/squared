@@ -52,16 +52,24 @@ if (keyboard_check(ord("S"))) {
 			var i = scr_checkArray(other.Player.inventory);
 		if (i <= 11) {
 			other.Player.inventory[i] = id;
-			x = -32
-			y = -32
+			x = 0
+			y = 0
 			image_speed = 0;
+			visible = false;
 			}
 		}
 	}
 
 //Check for dying
-if (Player.hp < 1)
+if (Player.hp < 1) {
 	instance_destroy();
+	if (not(instance_exists(obj_character))) {
+		room_restart();
+		var k = 0;
+		for (k=0; k<11; k+=1)
+			Player.inventory[k] = noone;
+		}
+	}
 
 //Check for winning
 if (not(instance_exists(obj_door))) {
