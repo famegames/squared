@@ -44,3 +44,18 @@ localPlayers = ds_map_create();
 
 // initiate the main menu
 scr_menuInitMain();
+
+/// Server
+// list to hold data for different menus, lobby
+serverData = ds_list_create();
+
+/// Controls
+// controls - global array holding the unicode value for each key
+var player = 0;
+global.controls[player, LEFT_KEY] = vk_left;
+global.controls[player, RIGHT_KEY] = vk_right;
+global.controls[player, UP_KEY] = vk_up;
+global.controls[player, DOWN_KEY] = vk_down;
+global.controls[player, ACTION_KEY] = vk_numpad0;         // jump
+global.controls[player, ACTION2_KEY] = vk_numpad3;   // selection
+global.controls[player, KEY_TYPE] = CONTROLS_KEYBOARD;

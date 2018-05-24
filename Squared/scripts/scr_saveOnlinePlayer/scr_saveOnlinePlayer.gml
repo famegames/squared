@@ -2,7 +2,7 @@
 /// @description save the online player details
 
 //open file
-ini_open("player.ini");
+ini_open("onlinePlayer.ini");
     
 //save data
 section = "menu";
