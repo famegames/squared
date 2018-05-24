@@ -247,6 +247,14 @@
             }
         },
         {
+            "Key": "43253d1d-4b85-448f-a87a-a655e65292d2",
+            "Value": {
+                "id": "563b6606-3737-4b43-8f2b-9589503173a3",
+                "resourcePath": "rooms\\rm_1_5\\rm_1_5.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "43d37e19-0789-4f01-bc5a-c3fff3c87526",
             "Value": {
                 "id": "aa03408b-0125-4d67-bcd7-599826f19212",
@@ -420,6 +428,14 @@
                 "id": "346c044e-5304-4c12-b514-d8657eb3f21b",
                 "resourcePath": "views\/6b58dc4e-73aa-4fb5-b9b3-783dd289487e.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "6f2d83c1-f8f2-43d3-958e-9abd461258e3",
+            "Value": {
+                "id": "93ab8ba8-ee3b-42f8-9257-6db17df6a001",
+                "resourcePath": "rooms\\rm_1_3\\rm_1_3.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -735,6 +751,14 @@
             }
         },
         {
+            "Key": "cbc3bfcb-2566-48bc-aa0e-be6cd89b5dd0",
+            "Value": {
+                "id": "8eddccf1-039c-4e5d-bc57-3ce56b160900",
+                "resourcePath": "rooms\\rm_1_6\\rm_1_6.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "cc98d028-7bdd-4680-85f3-c87a7baa481e",
             "Value": {
                 "id": "314ded73-a007-4996-981d-2827ce804d6c",
@@ -847,6 +871,14 @@
             }
         },
         {
+            "Key": "e1e8d134-f723-4d32-87c1-b01053b80aed",
+            "Value": {
+                "id": "17458d79-fdaa-4b67-bed7-7e74a23c7925",
+                "resourcePath": "rooms\\rm_1_2\\rm_1_2.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "e3c33362-2f99-475f-9205-377a60888b0b",
             "Value": {
                 "id": "aac132e5-88c2-4225-8520-a52510020fe3",
@@ -908,6 +940,14 @@
                 "id": "f71498e7-5f37-45a0-b850-d772ba776d7e",
                 "resourcePath": "sprites\/spr_sniper\/spr_sniper.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "f1d179b6-c954-4330-aac4-a1ea11b4daae",
+            "Value": {
+                "id": "51d541be-a441-451f-b2af-da805f9d9924",
+                "resourcePath": "rooms\\rm_1_4\\rm_1_4.yy",
+                "resourceType": "GMRoom"
             }
         },
         {

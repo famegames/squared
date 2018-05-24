@@ -10,6 +10,7 @@ if (inventoryOpen) {
 					if ((mouse_y >= ((room_height/2)-(208/2)+4*(i+1)+64*i)) and (mouse_y <= ((room_height/2)-(208/2)+4*(i+1)+64*i) + 64)) {
 						inventory[i*3+j+2].x = obj_character.x;
 						inventory[i*3+j+2].y = obj_character.y;
+						inventory[i*3+j+2].visible = true;
 						inventory[i*3+j+2] = noone;
 						}
 					}
