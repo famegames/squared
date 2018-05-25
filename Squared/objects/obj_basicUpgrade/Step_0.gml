@@ -4,7 +4,7 @@ var upgradeId = image_index;
 
 switch (upgradeId) {
 	case 0:
-		dmg = 3;
+		dmg = 1;
 		fireRate = 0;
 		range = 0;
 		break;

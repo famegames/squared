@@ -15,7 +15,8 @@ if (inventoryOpen) {
 								if (object_is_ancestor(inventory[0].object_index,par_toolModular)) {
 									with (inventory[0]) {
 										dmg += other.inventory[other.currentIndex].dmg;
-										fireRate += other.inventory[other.currentIndex].fireRate;
+										if (fireRate >= (other.fireRateMin - other.inventory[other.currentIndex].fireRate))
+											fireRate += other.inventory[other.currentIndex].fireRate;
 										range += other.inventory[other.currentIndex].range;
 										homingLevel += other.inventory[other.currentIndex].homingLevel;
 										multishot += other.inventory[other.currentIndex].multishot;
