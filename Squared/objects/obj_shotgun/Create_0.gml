@@ -1,7 +1,7 @@
 /// @description Set stats
-dmg = 10;
+dmg = 15;
 fireRate = 40;
-range = 5;
+range = 7;
 image_index = 0;
 image_speed = 0;
 
